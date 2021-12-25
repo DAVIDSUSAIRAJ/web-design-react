@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "../component/nav.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
+import tree from "../images/tree.jpg";
 import { useState } from "react";
 function Nav(params) {
   const [icon, setIcon] = useState(false);
   const [formtxt, setFormtxt] = useState(false);
   const [formtoggle, setFormtoggle] = useState(false);
+  console.log(formtoggle);
   const menuClick = () => {
     setIcon(!icon);
   };
@@ -21,13 +23,15 @@ function Nav(params) {
   const formstoggle = () => {
     setFormtoggle(!formtoggle);
   };
+  // const logoImage =
+  //   "https://pics.clipartpng.com/midle/Green_Tree_PNG_Clip_Art-2888.png";
 
   return (
     <div>
       <nav className="nav">
         <div className="nav--logo" onClick={closeSideDrawer}>
           <NavLink to="/" className="nav--logo__img">
-            LOGO
+            <img src={tree} alt="nature-tree-image"></img>
           </NavLink>
         </div>
         <div className={icon ? "nav--menus show" : "nav--menus"}>
@@ -52,12 +56,15 @@ function Nav(params) {
             </li>
             <li className="nav--menus--ul__li">
               <div className="dropdown">
-                <p className={formtxt ? "formstxt" : "dropbtn"}>
+                <p
+                  className={formtxt ? "formstxt" : "dropbtn"}
+                  onClick={formstoggle}
+                >
                   FORMS &nbsp;
-                  <i class="fas fa-angle-down" onClick={formstoggle}></i>
+                  <i class="fas fa-angle-down"></i>
                 </p>
 
-                <div class="dropdown-content">
+                <div class={formtoggle ? "block" : "dropdown-content"}>
                   <NavLink
                     to="/registration"
                     className={(navData) =>

@@ -1,0 +1,25 @@
+.hero--nature {
+  background-color: rgb(49, 98, 37);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+
+  img {
+    background-color: rgb(82, 224, 39);
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 1;
+  }
+  h2 {
+    position: absolute;
+    margin-top: 30px;
+    color: rgb(2, 2, 2);
+    word-spacing: 5px;
+    z-index: 1;
+  }
+}
