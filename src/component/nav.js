@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "../component/nav.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
-import tree from "../images/tree.jpg";
+import tree from "../images/logo-tree.jpg";
 import { useState } from "react";
 function Nav(params) {
   const [icon, setIcon] = useState(false);
@@ -23,8 +23,6 @@ function Nav(params) {
   const formstoggle = () => {
     setFormtoggle(!formtoggle);
   };
-  // const logoImage =
-  //   "https://pics.clipartpng.com/midle/Green_Tree_PNG_Clip_Art-2888.png";
 
   return (
     <div>
@@ -54,6 +52,17 @@ function Nav(params) {
                 ABOUT
               </NavLink>
             </li>
+
+            <li className="nav--menus--ul__li contact">
+              <NavLink
+                to="/contact"
+                onClick={closeSideDrawer}
+                className={(navData) => (navData.isActive ? "green" : "black")}
+              >
+                CONTACT
+              </NavLink>
+            </li>
+
             <li className="nav--menus--ul__li">
               <div className="dropdown">
                 <p
@@ -94,15 +103,6 @@ function Nav(params) {
                   </NavLink>
                 </div>
               </div>
-            </li>
-            <li className="nav--menus--ul__li contact">
-              <NavLink
-                to="/contact"
-                onClick={closeSideDrawer}
-                className={(navData) => (navData.isActive ? "green" : "black")}
-              >
-                CONTACT
-              </NavLink>
             </li>
           </ul>
         </div>

@@ -1,0 +1,77 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  gap: 20px;
+  background-color: rgb(235, 240, 235);
+  position: relative;
+
+  &--img {
+    .flying-birds {
+      width: 200px;
+      left: 20%;
+      position: absolute;
+      transform: translateY(-40px);
+    }
+    .pipal-tree {
+      width: 400px;
+    }
+  }
+  &--content {
+    h4 {
+      text-align: center;
+      font-size: 25px;
+      word-spacing: 2px;
+      color: rgb(43, 165, 43);
+      transform: translateY(-50%);
+    }
+    P {
+      width: 500px;
+      text-align: justify;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      font-size: 15px;
+      line-height: 25px;
+      color: rgb(68, 66, 66);
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about {
+    // display: none;
+    flex-direction: column;
+
+    &--img {
+      .flying-birds {
+        width: 100px;
+        left: 30%;
+        position: absolute;
+        transform: translateY(-20px);
+      }
+      .pipal-tree {
+        width: 250px;
+      }
+    }
+    &--content {
+      h4 {
+        text-align: center;
+        font-size: 18px;
+        word-spacing: 2px;
+        color: rgb(43, 165, 43);
+        transform: translateY(-50%);
+      }
+      P {
+        width: 200px;
+        text-align: justify;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 12px;
+        line-height: 25px;
+        color: rgb(68, 66, 66);
+      }
+    }
+  }
+}

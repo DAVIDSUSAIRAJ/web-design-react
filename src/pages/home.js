@@ -7,7 +7,7 @@ function Home(params) {
       <div className="hero--nature">
         {/* <h1>HOME</h1> */}
         <img src={heroNature} alt="hero-nature"></img>;
-        <h2>WELCOME TO THE NATURE WORLD</h2>
+        <h2>WELCOME TO THE TREES WORLD</h2>
       </div>
     </div>
   );
