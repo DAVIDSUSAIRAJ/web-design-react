@@ -27,8 +27,10 @@
       color: rgb(43, 165, 43);
       transform: translateY(-50%);
     }
+
     P {
       width: 500px;
+      height: 125px;
       text-align: justify;
       letter-spacing: 1px;
       word-spacing: 1px;
@@ -36,6 +38,37 @@
       line-height: 25px;
       color: rgb(68, 66, 66);
     }
+  }
+  .none {
+    display: none;
+  }
+  .block {
+    display: inline;
+  }
+  .read-top {
+    padding: 2px 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 165, 43);
+    color: rgb(243, 233, 233);
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.2s;
+  }
+  .read-bottom {
+    padding: 2px 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 165, 43);
+
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.2s;
   }
 }
 

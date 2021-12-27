@@ -81,7 +81,7 @@ function Nav(params) {
                     }
                     onClick={closeSideDrawer1}
                   >
-                    REGISTRATION
+                    SIGNUP
                   </NavLink>
                   <NavLink
                     to="/login"
