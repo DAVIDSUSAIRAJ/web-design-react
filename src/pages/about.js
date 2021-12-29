@@ -19,7 +19,7 @@ function About(params) {
           <h4>The Tree of Life!!</h4>
 
           <p>
-            A tree of life ( The Tree of Life ) is a human life science,
+            A tree of life ( The Tree of Life ) is a human life science and
             religion, philosophy, and according to the legend of a tree
             evolutionary compared valarcciyotu. The origin of man living on
             earth<span className={readmore ? "none" : "block"}>......</span>

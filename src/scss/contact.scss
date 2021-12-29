@@ -1,0 +1,161 @@
+.contactp {
+  // background-color: red;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-card {
+    width: 70%;
+    height: 400px;
+    // background-color: rgb(16, 19, 233);
+    transform: translateY(-30px);
+    &1 {
+      // background-color: yellow;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &--form {
+        margin-left: 30px;
+        flex-grow: 1;
+        // background-color: lightcoral;
+        h4 {
+          color: green;
+        }
+
+        .name,
+        .feedback {
+          font-size: 14px;
+          padding: 7px 0px;
+          color: gray;
+          display: inline-block;
+        }
+
+        .nameInput,
+        .textareaInput {
+          width: 100%;
+
+          border: 2px solid transparent;
+          color: rgb(10, 10, 10);
+          outline: none;
+          background-color: rgb(108, 236, 108);
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 13px;
+
+          &:focus {
+            border: 2px solid rgb(15, 15, 15);
+          }
+        }
+        .textareaInput {
+          resize: none;
+        }
+        .contact-send-btn {
+          font-size: 14px;
+          // padding-right: 5px;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          background-color: rgb(96, 226, 96);
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background-color: rgb(31, 197, 31);
+          }
+        }
+        .name-feed,
+        .text-feed {
+          font-size: 12px;
+        }
+        .text-feed {
+          display: inline-block;
+          transform: translateY(-8px);
+        }
+      }
+
+      &--img {
+        width: 400px;
+        img {
+          // padding-left: 50px;
+          margin-left: 50px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contactp {
+    display: initial;
+    &-card {
+      width: 100vw;
+      height: 90vh;
+      // background-color: rgb(16, 19, 233);
+      transform: translateY(0px);
+
+      &1 {
+        // background-color: yellow;
+        width: 100vw;
+        height: 90vh;
+
+        flex-direction: column;
+
+        &--form {
+          margin-left: 0px;
+          flex-grow: 0;
+          width: 70vw;
+          height: 60vh;
+          // background-color: rgb(231, 36, 36);
+          transform: translateY(20px);
+          h4 {
+            font-size: 13px;
+          }
+
+          .name,
+          .feedback {
+            font-size: 12px;
+            padding: 0px 0px;
+
+            display: inline-block;
+          }
+
+          .nameInput,
+          .textareaInput {
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+          }
+
+          .contact-send-btn {
+            font-size: 13px;
+
+            padding: 5px;
+          }
+          .name-feed,
+          .text-feed {
+            font-size: 11px;
+          }
+          .text-feed {
+            display: inline-block;
+            transform: translateY(-8px);
+          }
+        }
+
+        &--img {
+          width: 200px;
+
+          transform: translateY(-45px);
+          img {
+            margin-left: 0px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

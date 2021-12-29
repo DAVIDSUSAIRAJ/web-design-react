@@ -6,12 +6,15 @@
     z-index: -1;
     position: absolute;
   }
+  .homeh2 {
+    margin: auto;
+    // background-color: red;
+    width: 30%;
 
-  h2 {
-    text-align: center;
-    &:hover {
-      color: green;
-      cursor: pointer;
+    h2 {
+      &:hover {
+        color: green;
+      }
     }
   }
 }
@@ -19,9 +22,14 @@
   .hero--nature {
     position: relative;
 
-    h2 {
-      transform: translateY(10px);
-      font-size: 16px;
+    .homeh2 {
+      width: 90%;
+      margin: auto;
+      h2 {
+        transform: translateY(20px);
+        font-size: 13px;
+        text-align: center;
+      }
     }
   }
 }
