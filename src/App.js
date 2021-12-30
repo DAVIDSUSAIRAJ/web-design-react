@@ -7,6 +7,7 @@ import Contact from "./pages/contact";
 import Registration from "./pages/registration";
 import Login from "./pages/login";
 import Logout from "./pages/logout";
+import NotFound from "./pages/notfound";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,8 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
+          {/* <Route path="/*" element={<NotFound />} /> */}
+          <Route path="/:notf" element={<NotFound />} />
         </Routes>
       </Router>
     </div>

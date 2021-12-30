@@ -1,5 +1,5 @@
 .contactp {
-  // background-color: red;
+  background-color: rgb(240, 238, 238);
   width: 100vw;
   height: 90vh;
   display: flex;
@@ -45,6 +45,7 @@
           padding: 10px;
           border-radius: 5px;
           font-size: 13px;
+          transition: all 0.3s ease-in;
 
           &:focus {
             border: 2px solid rgb(15, 15, 15);

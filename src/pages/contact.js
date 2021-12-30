@@ -60,6 +60,10 @@ function Contact(params) {
 
   // HANDLE SUBMIT
   const handleSubmit = (e) => {
+    // const name = document.getElementById("name").value;
+    // const feedback = document.getElementById("textarea");
+    // window.location.href =
+    //   "mailto:enteryourmailid@gamil.com?name=" + name + "&textarea=" + textarea;
     // e.preventDefault();
     // return false;
     alert("form has submitted");
@@ -72,7 +76,7 @@ function Contact(params) {
           <div className="contactp-card1">
             <div className="contactp-card1--form">
               <h4>Contact us a messsage</h4>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} target="_blank" method="GET">
                 <label className="name" for="name">
                   Name
                 </label>
