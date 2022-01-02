@@ -2,7 +2,7 @@
   background-color: rgb(233, 229, 229);
   width: 100vw;
   height: 90vh;
-  //   color: red;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,54 +10,660 @@
     background-color: rgb(241, 238, 238);
     width: 70%;
     height: 500px;
-    // padding: 40px;
+
     &--h4 {
       font-size: 18px;
       transform: translateY(-19px);
     }
     &--form {
-      //   background-color: blue;
+      transform: translateX(25px);
+
       &--details {
         display: grid;
-        grid-template-columns: auto auto;
-        // gap: 20px 40px;
-        gap: 10px;
-        
+        grid-template-columns: 45% 45%;
 
-        // .input-box1,
-        // .input-box2,
-        // .input-box3,
-        // .input-box4,
-        // .input-box5,
-        // .input-box6 {
-        //   //   background-color: green;
-        //   input {
-        //     width: 80%;
-        //     padding: 6px;
-        //     border: 2px solid transparent;
-        //     outline: none;
-        //     transition: 0.3s all ease-in;
-        //     border-radius: 5px;
-        //   }
-        //   input:focus {
-        //     border: 2px solid black;
-        //   }
-        // }
+        gap: 8px 20px;
+        padding: 3px 30px;
+
+        // START NAME INPUT-BOX1
+        .input-box1 {
+          position: relative;
+          .name {
+            padding: 5px;
+            color: gray;
+          }
+
+          .name-input {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgb(231, 231, 231);
+            transition: all 0.3s ease-in;
+          }
+
+          .name-input:focus {
+            border: 2px solid rgb(228, 13, 13);
+            color: black;
+          }
+          .name-true-focus {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+            transition: all 0.3s ease-in;
+          }
+          .name-true-focus:focus {
+            color: black;
+            border: 2px solid green;
+          }
+
+          // TICK AND EXCLAMATION ICONS
+          .faIcon-tick {
+            display: none;
+            position: absolute;
+            right: 8px;
+            top: 28px;
+          }
+          .faIcon-true-tick {
+            display: block;
+            position: absolute;
+            right: 8px;
+            top: 28px;
+            color: green;
+          }
+
+          .faIcon-ex {
+            display: block;
+            position: absolute;
+            right: 8px;
+            top: 28px;
+            color: red;
+          }
+          .faIcon-true-ex {
+            display: none;
+            position: absolute;
+            right: 8px;
+            top: 28px;
+          }
+
+          // END TICK AND EXCLAMATIONS ICONS
+
+          .name-feed {
+            font-size: 12px;
+          }
+        }
+
+        // END NAME INPUT BOX1
+        // START DATE OF BIRTH INPUT BOX2
+        .input-box2 {
+          position: relative;
+          .date-input {
+            color: red;
+          }
+          .date {
+            padding: 5px;
+            color: gray;
+          }
+
+          .date-input {
+            color: rgb(3, 3, 3);
+            // color: gray;
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+            transition: all 0.3s ease-in;
+          }
+          .date-input:focus {
+            border: 2px solid green;
+            color: black;
+            background-color: lightgreen;
+          }
+
+          .date-inputFalse {
+            color: gray;
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgb(220, 228, 220);
+            transition: all 0.3s ease-in;
+          }
+
+          .date-inputFalse:focus {
+            border: 2px solid red;
+            color: rgb(59, 58, 58);
+          }
+
+          .date-tick {
+            display: block;
+            color: green;
+            position: absolute;
+            top: 28px;
+            right: 50px;
+          }
+          .date-tick-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 50px;
+          }
+          .date-ex {
+            display: block;
+            position: absolute;
+            color: red;
+            top: 28px;
+            right: 50px;
+          }
+          .date-ex-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 50px;
+          }
+
+          .dateFeed {
+            font-size: 12px;
+          }
+        }
+        // START DATE OF BIRTH INPUT BOX2
+        // START EMAIL INPUT BOX3
+        .input-box3 {
+          position: relative;
+          .email {
+            padding: 5px;
+            color: gray;
+          }
+          .email-input {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+            transition: all 0.3s ease-in;
+          }
+          .email-input:focus {
+            border: 2px solid green;
+            color: black;
+          }
+
+          .email-input-false {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            color: gray;
+            background-color: rgb(220, 228, 220);
+            transition: all 0.3s ease-in;
+          }
+          .email-input-false:focus {
+            border: 2px solid red;
+            color: gray;
+          }
+
+          .email-tick {
+            display: block;
+            color: green;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .email-tick-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .email-ex {
+            display: block;
+            position: absolute;
+            color: red;
+            top: 28px;
+            right: 8px;
+          }
+          .email-ex-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+
+          .emailfeed {
+            font-size: 12px;
+          }
+        }
+        // END EMAIL INPUT BOX3
+
+        // START TELEPHONE INPUT BOX 4
+        .input-box4 {
+          position: relative;
+          .tel {
+            padding: 5px;
+            color: gray;
+          }
+          .tel-input {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+            transition: all 0.3s ease-in;
+          }
+          .tel-input:focus {
+            border: 2px solid green;
+            color: black;
+          }
+
+          .tel-input-false {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            color: gray;
+            background-color: rgb(220, 228, 220);
+            transition: all 0.3s ease-in;
+          }
+          .tel-input-false:focus {
+            border: 2px solid red;
+            color: gray;
+          }
+
+          .tel-tick {
+            display: block;
+            color: green;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .tel-tick-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .tel-ex {
+            display: block;
+            position: absolute;
+            color: red;
+            top: 28px;
+            right: 8px;
+          }
+          .tel-ex-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+
+          .telfeed {
+            font-size: 12px;
+          }
+        }
+        // END TELEPHONE INPUT BOX4
+        // START PASSWORD INPUT BOX5
+        .input-box5 {
+          position: relative;
+          .pwd {
+            padding: 5px;
+            color: gray;
+          }
+          .pwd-input {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            letter-spacing: 2px;
+            font-size: 13px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+            transition: all 0.3s ease-in;
+          }
+          .pwd-input:focus {
+            border: 2px solid green;
+            color: black;
+          }
+
+          .pwd-input-false {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            letter-spacing: 2px;
+            font-size: 13px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            color: gray;
+            background-color: rgb(220, 228, 220);
+            transition: all 0.3s ease-in;
+          }
+          .pwd-input-false:focus {
+            border: 2px solid red;
+            color: gray;
+          }
+
+          .pwd-tick {
+            display: block;
+            color: green;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .pwd-tick-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .pwd-ex {
+            display: block;
+            position: absolute;
+            color: red;
+            top: 28px;
+            right: 8px;
+          }
+          .pwd-ex-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .pshow-hide {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            font-size: 13px;
+            cursor: pointer;
+
+            .p-fa-eye-slash {
+              font-size: 12px;
+            }
+          }
+          .pwdfeed {
+            font-size: 12px;
+          }
+        }
+        // END PASSWORD INPUT BOX5
+        // START CONFIRM PASSWORD INPUT BOX6
+        .input-box6 {
+          position: relative;
+          .cpwd {
+            padding: 5px;
+            color: gray;
+          }
+          .cpwd-input {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            letter-spacing: 2px;
+            font-size: 13px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+            transition: all 0.3s ease-in;
+          }
+          .cpwd-input:focus {
+            border: 2px solid green;
+            color: black;
+          }
+
+          .cpwd-input-false {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            letter-spacing: 2px;
+            font-size: 13px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            color: gray;
+            background-color: rgb(220, 228, 220);
+            transition: all 0.3s ease-in;
+          }
+          .cpwd-input-false:focus {
+            border: 2px solid red;
+            color: gray;
+          }
+
+          .cpwd-tick {
+            display: block;
+            color: green;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .cpwd-tick-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+          .cpwd-ex {
+            display: block;
+            position: absolute;
+            color: red;
+            top: 28px;
+            right: 8px;
+          }
+          .cpwd-ex-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 8px;
+          }
+
+          .cpwdfeed {
+            font-size: 12px;
+          }
+
+          .cshow-hide {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            font-size: 13px;
+            cursor: pointer;
+            .faeyeslash {
+              font-size: 12px;
+            }
+          }
+        }
+        // END CONFIRM PASSWORD INPUT BOX6
+
         .input-box7 {
-          //   background-color: red;
-          label {
-            padding: 1px;
+          .gender {
+            padding: 5px;
+            color: gray;
+          }
+          .gender-inputs {
+            background-color: lightgreen;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            padding: 4px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .gender-tick-visible {
+              visibility: visible;
+              color: green;
+            }
+            .gender-tick-hidden {
+              visibility: hidden;
+              transition: all 0.3s ease-in;
+            }
+
+            .male-input,
+            .female-input,
+            .other-input {
+              cursor: pointer;
+              // zoom: 1.2;
+            }
+            .male,
+            .female,
+            .others {
+              color: #000;
+              cursor: pointer;
+              transform: translateX(-15px);
+            }
+            .male-false-color,
+            .female-false-color,
+            .others-false-color {
+              color: green;
+              cursor: pointer;
+              cursor: pointer;
+              transform: translateX(-15px);
+            }
+          }
+          .genderfeed {
+            i {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .input-box8 {
+          position: relative;
+          .city {
+            padding: 5px;
+            color: gray;
+          }
+
+          .city-input {
+            width: 100%;
+            height: 30px;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+
+            transition: all 0.3s ease-in;
+            cursor: pointer;
+          }
+          .city-input:focus {
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            border: 2px solid green;
+            outline: none;
+            border-radius: 5px;
+            background-color: lightgreen;
+          }
+          .city-input-false {
+            width: 100%;
+            height: 30px;
+
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: gray;
+            background-color: rgb(220, 228, 220);
+            transition: all 0.3s ease-in;
+          }
+          .city-input-false:focus {
+            width: 100%;
+            height: 30px;
+
+            border: 2px solid red;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: gray;
+            background-color: rgb(220, 228, 220);
+          }
+
+          .city-tick {
+            display: block;
+            color: green;
+            position: absolute;
+            top: 28px;
+            right: 28px;
+          }
+          .city-tick-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 28px;
+          }
+          .city-ex {
+            display: block;
+            position: absolute;
+            color: red;
+            top: 28px;
+            right: 28px;
+          }
+          .city-ex-false {
+            display: none;
+            position: absolute;
+            top: 28px;
+            right: 28px;
+          }
+
+          .select-city-txtcolor {
+            color: gray;
+          }
+          .city-feed-green {
+            color: green;
+            font-size: 12px;
+          }
+          .city-feed-red {
+            color: red;
+            font-size: 12px;
+          }
+          .default-text-black,
+          .chennai-black,
+          .mumbai-black,
+          .delhi-black {
+            color: #000;
+          }
+          .default-text-green,
+          .chennai-green,
+          .mumbai-green,
+          .delhi-green {
+            color: green;
           }
         }
       }
     }
 
     &--btn {
-      color: #000;
-
-      background-color: blueviolet;
+      text-align: center;
+      padding: 6px;
       button {
-        width: 100%;
+        width: 89%;
+        border: none;
+        outline: none;
+        background-color: lightgreen;
+        margin-top: 20px;
+        border-radius: 6px;
+        padding: 5px;
+        transform: translateX(-8px);
+        transition: all 0.2s linear;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(116, 238, 116);
       }
     }
   }

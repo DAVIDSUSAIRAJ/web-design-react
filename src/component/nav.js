@@ -7,7 +7,7 @@ function Nav(params) {
   const [icon, setIcon] = useState(false);
   const [formtxt, setFormtxt] = useState(false);
   const [formtoggle, setFormtoggle] = useState(false);
-  console.log(formtoggle);
+  // console.log(formtoggle);
   const menuClick = () => {
     setIcon(!icon);
   };
