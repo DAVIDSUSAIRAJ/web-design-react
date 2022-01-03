@@ -113,7 +113,7 @@ function Registration(params) {
         3 <= value.length &&
         value.length <= 25
       ) {
-        setNamefeed("WOW! looks good.");
+        setNamefeed("* looks good! *");
         feedColor.style.color = "green";
         setNamefocus(true);
         setnameTickicon(true);
@@ -137,15 +137,13 @@ function Registration(params) {
       const correctYear = currentYear - 18;
 
       if (value != "" && userYear <= correctYear) {
-        setDatefeed("WOW! looks good.");
+        setDatefeed("* looks good *");
         document.querySelector(".dateFeed").style.color = "green";
         setDate(true);
         setdateTickicon(true);
         setdateExicon(true);
       } else {
-        setDatefeed(
-          " * please check your input feild!! age must be 18+ only *"
-        );
+        setDatefeed(" * age must be 18+ only! *");
         document.querySelector(".dateFeed").style.color = "red";
         setDate(false);
         setdateTickicon(false);
@@ -159,13 +157,13 @@ function Registration(params) {
       const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
       if (value.match(mailformat)) {
-        setEmailfeed("WOW! looks good.");
+        setEmailfeed("* looks good! *");
         document.querySelector(".emailfeed").style.color = "green";
         setEmail(true);
         setemailTickicon(true);
         setemailExicon(true);
       } else {
-        setEmailfeed("* please check your input feild!! should be gmail* ");
+        setEmailfeed("* should be gmail! * ");
         document.querySelector(".emailfeed").style.color = "red";
         setEmail(false);
         setemailTickicon(false);
@@ -179,13 +177,13 @@ function Registration(params) {
     if (name == "tel") {
       let pattern = /^\d{10}$/;
       if (value.match(pattern)) {
-        setTelfeed("WOW! looks good.");
+        setTelfeed("*looks good.*");
         document.querySelector(".telfeed").style.color = "green";
         setTel(true);
         setTeltickicon(true);
         setTelexicon(true);
       } else {
-        setTelfeed("* please check your input feild!! * should be number");
+        setTelfeed("* should be number!*");
         document.querySelector(".telfeed").style.color = "red";
         setTel(false);
         setTeltickicon(false);
@@ -199,16 +197,14 @@ function Registration(params) {
     if (name == "password") {
       const decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/;
       if (value.match(decimal)) {
-        setPwdfeed("WOW! looks good.");
+        setPwdfeed("*looks good.*");
         document.querySelector(".pwdfeed").style.color = "green";
         setpasswordValue(value);
         setPwd(true);
         setPwdtickicon(true);
         setPwdexicon(true);
       } else {
-        setPwdfeed(
-          "* please check your input feild!! *should be like Da@$834424..."
-        );
+        setPwdfeed("*should be like Da@$834424...");
         document.querySelector(".pwdfeed").style.color = "red";
 
         setPwd(false);
@@ -222,15 +218,13 @@ function Registration(params) {
     // CONFIRM PASSWORD VALIDATION
     if (name == "confirmPassword") {
       if (passwordValue == value) {
-        setCpwdfeed("WOW! looks good.");
+        setCpwdfeed("looks good.");
         document.querySelector(".cpwdfeed").style.color = "green";
         setCpwd(true);
         setCpwdtickicon(true);
         setCpwdexicon(true);
       } else {
-        setCpwdfeed(
-          "* please check your input feild!! * Password did't match."
-        );
+        setCpwdfeed("* Password did't match!*.");
         document.querySelector(".cpwdfeed").style.color = "red";
 
         setCpwd(false);
@@ -243,7 +237,7 @@ function Registration(params) {
     //START GENDER VALIDATION
     if (name == "gender") {
       if (value != "") {
-        setGenderfeed("*WOW! looks good.*");
+        setGenderfeed("*looks good.*");
         document.querySelector(".genderfeed").style.color = "green";
         setGendertick(true);
       }
@@ -268,14 +262,14 @@ function Registration(params) {
       if (value != "") {
         setCity(true);
 
-        setCityfeed("*WOW! looks good.*");
+        setCityfeed("*looks good.*");
         setCityfeedcolor(true);
         setCitytickicon(true);
         setCityexicon(true);
       } else {
         setCity(false);
         setCityfeedcolor(false);
-        setCityfeed("* please check your input feild!! * ");
+        setCityfeed("* required!! * ");
         setCitytickicon(false);
         setCityexicon(false);
       }
@@ -558,7 +552,7 @@ function Registration(params) {
                       for="others"
                       className={otherscolor ? "others" : "others-false-color"}
                     >
-                      Prefer not to say
+                      Others
                     </label>
                     <span
                       className={

@@ -2,7 +2,7 @@
   position: relative;
   img {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     z-index: -1;
     position: absolute;
   }
@@ -10,10 +10,18 @@
     margin: auto;
     // background-color: red;
     width: 30%;
+    padding-top: 5%;
 
     h2 {
+      text-shadow: -1px 0 rgb(238, 234, 234), 0 1px rgb(238, 234, 234),
+        1px 0 rgb(238, 234, 234), 0 -1px rgb(238, 234, 234);
+      color: green;
+      transition: all 0.5s ease;
+      word-spacing: 5px;
+
       &:hover {
-        color: green;
+        color: rgb(46, 148, 42);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       }
     }
   }
@@ -23,11 +31,11 @@
     position: relative;
 
     .homeh2 {
-      width: 90%;
+      width: 100%;
       margin: auto;
       h2 {
-        transform: translateY(20px);
-        font-size: 13px;
+        transform: translateY(80px);
+        font-size: 15px;
         text-align: center;
       }
     }

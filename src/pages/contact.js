@@ -37,12 +37,7 @@ function Contact(params) {
     if (keyname == "textarea") {
       let alphabets = /^[a-zA-Z ]*$/;
 
-      if (
-        value != "" &&
-        value.match(alphabets) &&
-        10 <= value.length &&
-        value.length <= 255
-      ) {
+      if (value != "" && 10 <= value.length && value.length <= 255) {
         setTextarea("WOW! looks good.");
         const feedColor = document.querySelector(".text-feed");
         feedColor.style.color = "green";
@@ -66,7 +61,7 @@ function Contact(params) {
     //   "mailto:enteryourmailid@gamil.com?name=" + name + "&textarea=" + textarea;
     // e.preventDefault();
     // return false;
-    alert("form has submitted");
+    alert(`Thanks ${details.name}. Your feedback has submited`);
   };
   // console.log(details);
   return (
