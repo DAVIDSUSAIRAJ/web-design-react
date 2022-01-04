@@ -5,7 +5,9 @@
 
   display: flex;
   justify-content: center;
+
   align-items: center;
+  position: relative;
 
   &-form {
     z-index: 1;
@@ -19,6 +21,7 @@
     .form {
       width: 80%;
       margin: auto;
+      position: relative;
 
       .h2 {
         color: white;
@@ -52,6 +55,13 @@
       .pwd-input {
         letter-spacing: 3px;
       }
+      .login-eye {
+        position: absolute;
+        right: 10px;
+        .faeyeslash {
+          font-size: 15px;
+        }
+      }
       .login-btn {
         text-align: center;
 
@@ -70,6 +80,11 @@
         border-left: 1px solid rgba(255, 255, 255, 0.3);
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         cursor: pointer;
+        transition: all 0.3s linear;
+      }
+      .login-btn:hover {
+        background-color: rgb(112, 230, 112);
+        opacity: 0.5;
       }
       .forget-pwd {
         display: inline-block;
@@ -94,5 +109,37 @@
 
     border-radius: 50%;
     background-color: lightgreen;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .login {
+    flex-direction: column;
+
+    &-form {
+      width: 15rem;
+      height: 25rem;
+
+      .form {
+        width: 70%;
+        .login-btn {
+          width: 50%;
+          transform: translateX(-40px);
+
+          margin: 18px 80px;
+
+          padding: 10px 20px;
+        }
+      }
+    }
+    &-form::after {
+      display: none;
+      content: "";
+      width: 110px;
+      height: 110px;
+
+      right: 35%;
+      bottom: 10%;
+    }
   }
 }

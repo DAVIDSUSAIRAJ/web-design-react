@@ -1,0 +1,69 @@
+.logout {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-card {
+    width: 20rem;
+    height: 25rem;
+    background-color: rgb(50, 158, 0);
+
+    border-radius: 5px;
+    .avatar-img {
+      margin-top: 10%;
+
+      text-align: center;
+
+      img {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+      }
+    }
+    .logout-button {
+      text-align: center;
+      margin: auto;
+      //   transform: translateY(50%);
+      margin-top: 20%;
+
+      button {
+        padding: 10px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        background-color: lightgreen;
+        color: black;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+      }
+      button:hover {
+        background-color: rgb(106, 233, 106);
+      }
+    }
+    .logout-feeds {
+      padding-top: 28px;
+      text-align: center;
+      font-size: 14px;
+      color: white;
+    }
+  }
+}
+
+// @media only screen and (max-width: 576px) {
+//   .logout {
+
+//     &-card {
+//         width: 20rem;
+//         height: 20rem;
+//       background-color: red;
+//       margin: auto;
+//       margin-top: 30px;
+
+//     }
+//   }
+// }

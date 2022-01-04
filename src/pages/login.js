@@ -1,6 +1,12 @@
 import "../scss/login.scss";
+import { useState } from "react";
 
 function Login(params) {
+  const [logineye, setLogineye] = useState(false);
+  const loginshowHidden = () => {
+    setLogineye(!logineye);
+  };
+
   return (
     <div>
       <div className="login">
@@ -16,6 +22,7 @@ function Login(params) {
               name="loginname"
               id="username"
               className="username-input"
+              required
             ></input>
             <br></br>
             <label className="password" for="password">
@@ -23,11 +30,19 @@ function Login(params) {
             </label>
             <br></br>
             <input
-              type="password"
+              type={logineye ? "text" : "password"}
               name="loginpwd"
               id="password"
               className="pwd-input"
+              required
             ></input>
+            <span className="login-eye" onClick={loginshowHidden}>
+              {logineye ? (
+                <i class="fas fa-eye faeye"></i>
+              ) : (
+                <i class="fas fa-eye-slash faeyeslash"></i>
+              )}
+            </span>
             <br></br>
             <button className="login-btn">Login</button> <br></br>
             <a className="forget-pwd">forget password?</a>
