@@ -255,23 +255,21 @@ $green: #00af66;
 
 // END GENERAL MEDIADEVICE
 
-@media only screen and (min-width: 700px) {
-  .dropdown:hover {
-    .dropdown-content {
-      display: block;
-    }
-  }
-}
-
-@media only screen and (max-width: 576px) {
+// START MOBILE DEVICE MEDIA QUERY
+@media only screen and (max-width: 567px) {
   .nav {
     display: flex;
     justify-content: space-between;
-    
 
     &--logo {
       margin-left: 3rem;
       font-size: 18px;
+      &__img {
+        img {
+          margin-top: 4px;
+          width: 30px;
+        }
+      }
     }
     &-icons {
       margin-right: 3rem;
@@ -309,6 +307,131 @@ $green: #00af66;
     }
     .block {
       transform: translateX(-30%);
+    }
+  }
+}
+// END MOBILE DEVICE MEDIA QUERY
+
+// START LANDSCAPE MODE DEVICE
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+
+    &--logo {
+      margin-left: 3rem;
+      font-size: 18px;
+      &__img {
+        img {
+          margin-top: 4px;
+          width: 30px;
+        }
+      }
+    }
+    &-icons {
+      margin-right: 3rem;
+      font-size: 18px;
+      display: block;
+    }
+
+    &--menus {
+      position: fixed;
+      left: -100%;
+      right: 0%;
+      top: 10%;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(237, 243, 237);
+      transition: 0.5s;
+      z-index: 100;
+
+      &--ul {
+        display: initial;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        justify-content: space-around;
+
+        &__li {
+          padding: 15px 0px;
+        }
+      }
+    }
+    .show {
+      left: 0%;
+    }
+    .block {
+      transform: translateX(-30%);
+    }
+  }
+}
+
+// END LANDSCAPE MODE DEVICEE
+
+//START TABLET MODE DEVICE MEDIAQUERY
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+
+    &--logo {
+      margin-left: 3rem;
+      font-size: 18px;
+      &__img {
+        img {
+          margin-top: 5px;
+          width: 33px;
+        }
+      }
+    }
+    &-icons {
+      margin-right: 3rem;
+      font-size: 18px;
+      display: block;
+    }
+
+    &--menus {
+      position: fixed;
+      left: 0%;
+      right: 0%;
+      top: 100%;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(237, 243, 237);
+      transition: 0.5s;
+      z-index: 100;
+
+      &--ul {
+        display: initial;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        justify-content: space-around;
+
+        &__li {
+          padding: 15px 0px;
+        }
+      }
+    }
+    .show {
+      top: 10%;
+    }
+    .block {
+      transform: translateX(-30%);
+    }
+  }
+}
+// END TABLET MODE DEVICE MEDIAQUERY
+// START LAPTOP DEVICE IN MEIDAQUERY
+@media only screen and (min-width: 992px) {
+  .dropdown:hover {
+    .dropdown-content {
+      display: block;
     }
   }
 }
