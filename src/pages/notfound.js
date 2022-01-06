@@ -8,7 +8,7 @@ function NotFound(params) {
       <p style={{ textAlign: "center", color: "red", marginTopp: "90px" }}>
         {notFoundMsg.notf} 404 found!!
       </p>
-      <h1>go to home page!</h1>
+      <h1>go to home page!!</h1>
     </div>
   );
 }
