@@ -94,8 +94,8 @@ function Registration(params) {
     const name = e.target.name;
     const value = e.target.value.trim();
     //START USER DETAILS ADD IN setRegDetails OBJECT;
-    console.log(name);
-    console.log(value);
+    // console.log(name);
+    // console.log(value);
     setRegDetails((preRegDetail) => ({
       ...preRegDetail,
       [name]: value,
