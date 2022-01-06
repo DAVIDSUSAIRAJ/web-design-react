@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "../scss/contact.scss";
 
@@ -64,6 +64,14 @@ function Contact(params) {
     alert(`Thanks ${details.name}. Your feedback has submited`);
   };
   // console.log(details);
+  const contactFocus = useRef();
+
+  useEffect(() => {
+    contactFocus.current.focus();
+  }, []);
+  // START CONTACT AUTO FOCUS
+
+  // END COTACT AUTO FOCUS
   return (
     <div>
       <div className="contactp">
@@ -77,6 +85,7 @@ function Contact(params) {
                 </label>
                 <br></br>
                 <input
+                  ref={contactFocus}
                   type="text"
                   name="name"
                   id="name"

@@ -513,6 +513,7 @@
             }
             .gender-tick-hidden {
               visibility: hidden;
+              right: 10px;
               transition: all 0.3s ease-in;
             }
 
@@ -675,23 +676,21 @@
     }
   }
 }
-
+//START REGISTER  MOBILE DEVICE MODE IN MEDIA QUERY
 @media only screen and(max-width:576px) {
   .reg {
     display: initial;
-    margin-top: 50rem !important;
-   
-    background-color: rgb(236, 16, 16);
+
     &-card {
       // margin-top: 18%;
       padding: 0% 10%;
-    
+
       height: auto;
 
       width: 100%;
 
       &--h4 {
-         margin-top: 14%;
+        margin-top: 14%;
         font-size: 15px;
         padding-left: 8px;
         padding-bottom: 15px;
@@ -707,6 +706,244 @@
           grid-template-columns: auto;
           gap: 0px;
           padding: 0px;
+
+          .input-box7 {
+            position: relative;
+            .gender {
+              padding: 5px;
+              color: gray;
+            }
+            .gender-inputs {
+              .gender-tick-visible {
+                position: absolute;
+                right: 10px;
+                visibility: visible;
+                color: green;
+              }
+              .gender-tick-hidden {
+                visibility: hidden;
+                position: absolute;
+                right: 10px;
+                transition: all 0.3s ease-in;
+              }
+
+              .male,
+              .female,
+              .others {
+                padding-left: 4px;
+                margin-right: 10px;
+              }
+              .male-false-color,
+              .female-false-color,
+              .others-false-color {
+                padding-left: 4px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      &--btn {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        button {
+          width: 89%;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+// END REGISTER MOBILE DEVICE MODE
+
+// REGISTER LANDSCAPE MODE IN MEDIA QUERY
+@media only screen and(min-width:576px) and (max-width: 767px) {
+  .reg {
+    display: initial;
+
+    &-card {
+      margin-top: -10%;
+      padding: 0% 10%;
+
+      height: auto;
+
+      width: 100%;
+
+      &--h4 {
+        margin-top: 14%;
+        font-size: 15px;
+        padding-left: 8px;
+        padding-bottom: 15px;
+        padding-top: 40px;
+        color: green;
+      }
+      &--form {
+        transform: translateX(0px);
+        width: 100%;
+        height: auto;
+        &--details {
+          display: grid;
+          grid-template-columns: auto;
+          gap: 0px;
+          padding: 0px;
+
+          .input-box7 {
+            position: relative;
+            .gender {
+              padding: 5px;
+              color: gray;
+            }
+            .gender-inputs {
+              .gender-tick-visible {
+                position: absolute;
+                right: 10px;
+                visibility: visible;
+                color: green;
+              }
+              .gender-tick-hidden {
+                visibility: hidden;
+                position: absolute;
+                right: 10px;
+                transition: all 0.3s ease-in;
+              }
+
+              .male,
+              .female,
+              .others {
+                padding-left: 4px;
+                margin-right: 10px;
+              }
+              .male-false-color,
+              .female-false-color,
+              .others-false-color {
+                padding-left: 4px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      &--btn {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        button {
+          width: 89%;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+
+// END REGISTER LANDSCAPE MODE IN MEDIA QUERY
+
+// START REGISTER TABLET MODE IN MEDIA QUERY
+@media only screen and(min-width:767px) and (max-width: 992px) {
+  .reg {
+    display: initial;
+
+    &-card {
+      margin-top: -3%;
+      padding: 0% 10%;
+
+      height: auto;
+
+      width: 100%;
+
+      &--h4 {
+        margin-top: 14%;
+        font-size: 15px;
+        padding-left: 8px;
+        padding-bottom: 15px;
+        padding-top: 40px;
+        color: green;
+      }
+      &--form {
+        transform: translateX(0px);
+        width: 100%;
+        height: auto;
+        &--details {
+          display: grid;
+          grid-template-columns: auto;
+          gap: 0px;
+          padding: 0px;
+
+          .input-box7 {
+            position: relative;
+            .gender {
+              padding: 5px;
+              color: gray;
+            }
+            .gender-inputs {
+              .gender-tick-visible {
+                position: absolute;
+                right: 10px;
+                visibility: visible;
+                color: green;
+              }
+              .gender-tick-hidden {
+                visibility: hidden;
+                position: absolute;
+                right: 10px;
+                transition: all 0.3s ease-in;
+              }
+
+              .male,
+              .female,
+              .others {
+                padding-left: 8px;
+                margin-right: 40px;
+              }
+              .male-false-color,
+              .female-false-color,
+              .others-false-color {
+                padding-left: 8px;
+                margin-right: 40px;
+              }
+            }
+          }
+        }
+      }
+      &--btn {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        button {
+          width: 89%;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+// END REGISTER TABLET MODE IN MEDIA QUERY
+@media only screen and(min-width:992px) and (max-width: 1200px) {
+  .reg {
+    &-card {
+      &--h4 {
+        color: green;
+      }
+      &--form {
+        height: auto;
+        &--details {
+          .input-box7 {
+            .gender {
+              color: gray;
+            }
+            .gender-inputs {
+              .male,
+              .female,
+              .others {
+                padding-left: 4px;
+                margin-right: 10px;
+              }
+              .male-false-color,
+              .female-false-color,
+              .others-false-color {
+                padding-left: 4px;
+                margin-right: 10px;
+              }
+            }
+          }
         }
       }
       &--btn {

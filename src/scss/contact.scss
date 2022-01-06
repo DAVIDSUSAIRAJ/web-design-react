@@ -89,42 +89,195 @@
     }
   }
 }
-
+//  CONTACT MOBILE DEVICE
 @media only screen and (max-width: 576px) {
   .contactp {
     display: initial;
     &-card {
       width: 100vw;
       height: 100vh;
-      // background-color: rgb(16, 19, 233);
-      transform: translateY(19px);
 
       &1 {
         // background-color: yellow;
         width: 100vw;
         height: 100vh;
-
+        padding-top: 60px;
         flex-direction: column;
 
         &--form {
           margin-left: 0px;
           flex-grow: 0;
           width: 70vw;
-        
+
           transform: translateY(30px);
           h4 {
             font-size: 15px;
+            padding-top: 30px;
+            padding-bottom: 10px;
           }
-
         }
 
         &--img {
           width: 200px;
 
-          transform: translateY(-45px);
+          transform: translateY(10px);
+          img {
+            margin-left: 20px;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+// END CONTACT MOBILE DEVICE
+
+// CONTACT LANDSCAPE MODE DEVICE
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contactp {
+    display: initial;
+    &-card {
+      width: 100vw;
+      height: 100vh;
+
+      &1 {
+        // background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 160px;
+        flex-direction: column;
+
+        &--form {
+          margin-left: 30px;
+          // flex-grow: 1;
+          // background-color: lightcoral;
+          width: 20rem;
+          h4 {
+            color: green;
+          }
+
+          .name,
+          .feedback {
+            font-size: 12px;
+            padding: 2px 0px;
+            color: gray;
+            display: inline-block;
+          }
+
+          .nameInput,
+          .textareaInput {
+            width: 100%;
+
+            padding: 2px;
+
+            font-size: 13px;
+          }
+          .textareaInput {
+            height: 60px;
+          }
+          .contact-send-btn {
+            font-size: 12px;
+
+            padding: 5px;
+          }
+          .name-feed,
+          .text-feed {
+            font-size: 11px;
+          }
+        }
+
+        &--img {
+          width: 130px;
+
+          transform: translateY(-55px);
+          img {
+            margin-left: 90px;
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+// END CONTACT LANDSCAPE MODE DEVICE
+
+//START CONTACT TAB MODE DEVICE MODE IN MEDIA QUERY
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .contactp {
+    display: initial;
+    &-card {
+      width: 100vw;
+      height: 100vh;
+
+      &1 {
+        // background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 100px;
+        flex-direction: column;
+
+        &--form {
+          margin-left: 0px;
+          flex-grow: 0;
+          width: 70vw;
+
+          transform: translateY(30px);
+          h4 {
+            font-size: 15px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &--img {
+          width: 350px;
+
+          transform: translateY(-10px);
           img {
             margin-left: 0px;
-            width: 200px;
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// END CONTACT TAB MODE IN MEDIA QUERY
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .contactp {
+    display: initial;
+    &-card {
+      width: 100vw;
+      height: 100vh;
+
+      &1 {
+        // background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 100px;
+        flex-direction: column;
+
+        &--form {
+          margin-left: 0px;
+          flex-grow: 0;
+          width: 70vw;
+
+          transform: translateY(30px);
+          h4 {
+            font-size: 15px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &--img {
+          width: 350px;
+
+          transform: translateY(-28px);
+          img {
+            margin-left: 0px;
+            width: 350px;
           }
         }
       }

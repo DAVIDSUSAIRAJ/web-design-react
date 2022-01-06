@@ -54,16 +54,45 @@
   }
 }
 
-// @media only screen and (max-width: 576px) {
-//   .logout {
-
-//     &-card {
-//         width: 20rem;
-//         height: 20rem;
-//       background-color: red;
-//       margin: auto;
-//       margin-top: 30px;
-
-//     }
-//   }
-// }
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .logout {
+    &-card {
+      width: 20rem;
+      height: 18rem;
+      // background-color: rgb(50, 158, 0);
+  
+      border-radius: 5px;
+      transform: translateY(20px);
+      .avatar-img {
+        margin-top: 0%;
+  
+        text-align: center;
+  
+        img {
+          width: 32%;
+          height: 32%;
+          border-radius: 50%;
+        }
+      }
+      .logout-button {
+        text-align: center;
+        margin: auto;
+        //   transform: translateY(50%);
+        margin-top: 20%;
+  
+        button {
+          padding: 8px;
+       
+    
+        }
+       
+      }
+      .logout-feeds {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+      }
+    }
+  }
+}

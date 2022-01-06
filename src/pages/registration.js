@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "../scss/registration.scss";
 
@@ -119,9 +119,7 @@ function Registration(params) {
         setnameTickicon(true);
         setnameExicon(true);
       } else {
-        setNamefeed(
-          "* please check your input feild!! should be alphabets only *"
-        );
+        setNamefeed("* should be alphabets only *");
         feedColor.style.color = "red";
         setNamefocus(false);
         setnameTickicon(false);
@@ -315,7 +313,10 @@ function Registration(params) {
     // e.preventDefault();
     alert(`${regDetails.name} form has submitted.`);
   };
-
+  const autoFocusReg = useRef();
+  useEffect(() => {
+    autoFocusReg.current.focus();
+  }, []);
   return (
     <div>
       <div className="reg">
@@ -332,6 +333,7 @@ function Registration(params) {
                   </label>
                   <br></br>
                   <input
+                    ref={autoFocusReg}
                     type="text"
                     name="name"
                     id="name"

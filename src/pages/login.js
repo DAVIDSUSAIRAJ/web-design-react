@@ -1,23 +1,34 @@
 import "../scss/login.scss";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Login(params) {
   const [logineye, setLogineye] = useState(false);
   const loginshowHidden = () => {
     setLogineye(!logineye);
   };
+  const handleonClick = () => {
+    alert("login sucessfully!!");
+  };
 
+  // LOGIN AUTO FOCUS
+
+  const loginFocus = useRef();
+  useEffect(() => {
+    loginFocus.current.focus();
+  }, []);
+  // END LOGIN AUTO FOCUS
   return (
     <div>
       <div className="login">
         <div className="login-form">
-          <form className="form">
+          <form className="form" onSubmit={handleonClick}>
             <h2 className="h2">LOGIN</h2>
             <label className="username" for="username">
               Username
             </label>
             <br></br>
             <input
+              ref={loginFocus}
               type="text"
               name="loginname"
               id="username"

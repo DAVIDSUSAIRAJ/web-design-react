@@ -116,3 +116,94 @@
     }
   }
 }
+// LANDSCAPE MODE
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about {
+    flex-direction: column;
+    padding-top: 1rem;
+
+    &--img {
+      .flying-birds {
+        width: 80px;
+
+        left: 50%;
+        position: absolute;
+        transform: translateY(5px);
+      }
+      .pipal-tree {
+        width: 150px;
+        transform: translateY(10px);
+      }
+    }
+    &--content {
+      h4 {
+        font-size: 16px;
+      }
+      P {
+        width: 400px;
+        height: 100px;
+
+        font-size: 12px;
+        line-height: 22px;
+
+        transform: translateY(-13px);
+      }
+    }
+    .read-top {
+      padding: 0px 5px;
+      margin-top: 0px;
+
+      transform: translateY(-20px);
+    }
+    .read-bottom {
+      padding: 0px 5px;
+      margin-top: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    padding-top: 1rem;
+
+    &--img {
+      .flying-birds {
+        width: 180px;
+
+        left: 38%;
+        position: absolute;
+        transform: translateY(-20px);
+      }
+      .pipal-tree {
+        width: 200px;
+        transform: translateY(10px);
+      }
+    }
+    &--content {
+      h4 {
+        font-size: 16px;
+        transform: translateY(0%);
+      }
+      P {
+        width: 400px;
+        height: 100px;
+
+        font-size: 13px;
+        line-height: 22px;
+
+        transform: translateY(10px);
+      }
+    }
+    .read-top {
+      padding: 0px 5px;
+      margin-top: 0px;
+
+      transform: translateY(1px);
+    }
+    .read-bottom {
+      padding: 0px 5px;
+      margin-top: 0px;
+      transform: translateY(40px);
+    }
+  }
+}

@@ -7,10 +7,9 @@
     position: absolute;
   }
   .homeh2 {
-    margin: auto;
-    // background-color: red;
-    width: 30%;
-    padding-top: 5%;
+    text-align: center;
+    width: 100%;
+    padding-top: 9%;
 
     h2 {
       text-shadow: -1px 0 rgb(238, 234, 234), 0 1px rgb(238, 234, 234),
@@ -26,7 +25,7 @@
     }
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .hero--nature {
     position: relative;
 
@@ -41,3 +40,14 @@
     }
   }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .hero--nature {
+    .homeh2 {
+      transform: translateY(50px);
+
+    }
+  }
+}
+
+
