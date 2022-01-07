@@ -141,7 +141,7 @@ function Registration(params) {
         setdateTickicon(true);
         setdateExicon(true);
       } else {
-        setDatefeed(" * age must be 18+ only! *");
+        setDatefeed(" * age must be 18+ ! *");
         document.querySelector(".dateFeed").style.color = "red";
         setDate(false);
         setdateTickicon(false);
