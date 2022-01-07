@@ -25,7 +25,7 @@ function About(params) {
             earth<span className={readmore ? "none" : "block"}>......</span>
             <span className={readmore ? "block" : "none"}>
               remains a mystery that has not yet been discovered by any
-              research..
+              research...
             </span>
           </p>
 
