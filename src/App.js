@@ -11,7 +11,7 @@ import NotFound from "./pages/notfound";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/web-design-react">
         {/* this is navbar component */}
         <Nav />
         <Routes>
@@ -22,8 +22,8 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
-          {/* <Route path="/*" element={<NotFound />} /> */}
-          <Route path="/:notf" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
+          {/* <Route path="/:notf" element={<NotFound />} /> */}
         </Routes>
       </Router>
     </div>
