@@ -6,7 +6,8 @@ function Login(params) {
   const loginshowHidden = () => {
     setLogineye(!logineye);
   };
-  const handleonClick = () => {
+  const handleonClick = (e) => {
+    e.preventDefault();
     alert("login sucessfully!!");
   };
 

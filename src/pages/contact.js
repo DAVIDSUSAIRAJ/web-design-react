@@ -62,7 +62,7 @@ function Contact(params) {
     e.preventDefault();
 
     alert(`Thanks ${details.name}. Your feedback has submited`);
-    return false;
+    // return false;
   };
   // console.log(details);
   const contactFocus = useRef();

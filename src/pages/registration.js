@@ -310,7 +310,7 @@ function Registration(params) {
   // END CONFIRM PASSWORD HANDLE EYE ICONS
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     alert(`${regDetails.name} form has submitted.`);
   };
   const autoFocusReg = useRef();
