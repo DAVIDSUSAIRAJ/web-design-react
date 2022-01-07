@@ -60,8 +60,9 @@ function Contact(params) {
     // window.location.href =
     //   "mailto:enteryourmailid@gamil.com?name=" + name + "&textarea=" + textarea;
     e.preventDefault();
-    // return false;
+
     alert(`Thanks ${details.name}. Your feedback has submited`);
+    return false;
   };
   // console.log(details);
   const contactFocus = useRef();
