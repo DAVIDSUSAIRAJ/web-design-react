@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/web-design-react/static/css/main.1e5562cc.css",
-    "main.js": "/web-design-react/static/js/main.19502b1d.js",
+    "main.css": "/web-design-react/static/css/main.c312e4ff.css",
+    "main.js": "/web-design-react/static/js/main.c62b3690.js",
     "static/media/beard-gmail.png": "/web-design-react/static/media/beard-gmail.6164357848d7c98629e3.png",
     "static/media/pipal-tree.png": "/web-design-react/static/media/pipal-tree.3f9cd0a78610e460df66.png",
     "static/media/original_avatar.jpg": "/web-design-react/static/media/original_avatar.147b3a49b42e79841926.jpg",
     "index.html": "/web-design-react/index.html",
-    "main.1e5562cc.css.map": "/web-design-react/static/css/main.1e5562cc.css.map",
-    "main.19502b1d.js.map": "/web-design-react/static/js/main.19502b1d.js.map"
+    "main.c312e4ff.css.map": "/web-design-react/static/css/main.c312e4ff.css.map",
+    "main.c62b3690.js.map": "/web-design-react/static/js/main.c62b3690.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e5562cc.css",
-    "static/js/main.19502b1d.js"
+    "static/css/main.c312e4ff.css",
+    "static/js/main.c62b3690.js"
   ]
 }
