@@ -59,7 +59,7 @@ function Contact(params) {
     // const feedback = document.getElementById("textarea");
     // window.location.href =
     //   "mailto:enteryourmailid@gamil.com?name=" + name + "&textarea=" + textarea;
-    // e.preventDefault();
+    e.preventDefault();
     // return false;
     alert(`Thanks ${details.name}. Your feedback has submited`);
   };
