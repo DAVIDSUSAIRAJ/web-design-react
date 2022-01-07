@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/web-design-react/static/css/main.cd1b1deb.css",
+    "main.css": "/web-design-react/static/css/main.1e5562cc.css",
     "main.js": "/web-design-react/static/js/main.19502b1d.js",
     "static/media/beard-gmail.png": "/web-design-react/static/media/beard-gmail.6164357848d7c98629e3.png",
     "static/media/pipal-tree.png": "/web-design-react/static/media/pipal-tree.3f9cd0a78610e460df66.png",
     "static/media/original_avatar.jpg": "/web-design-react/static/media/original_avatar.147b3a49b42e79841926.jpg",
     "index.html": "/web-design-react/index.html",
-    "main.cd1b1deb.css.map": "/web-design-react/static/css/main.cd1b1deb.css.map",
+    "main.1e5562cc.css.map": "/web-design-react/static/css/main.1e5562cc.css.map",
     "main.19502b1d.js.map": "/web-design-react/static/js/main.19502b1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd1b1deb.css",
+    "static/css/main.1e5562cc.css",
     "static/js/main.19502b1d.js"
   ]
 }
