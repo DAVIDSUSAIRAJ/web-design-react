@@ -96,7 +96,7 @@
     &-card {
       width: 100vw;
       height: 100vh;
-      background-color: rgb(0, 60, 255);
+      background-color: rgb(61, 235, 8);
 
       &1 {
         // background-color: yellow;
@@ -108,10 +108,11 @@
         &--form {
           margin-left: 0px;
           // flex-grow: 0;
-          padding-top: 30px;
-          width: 70vw;
+          // padding-top: 30px;
+          width: 60vw;
+          height: 60vh;
 
-          // transform: translateY(30px);
+          transform: translateY(90px);
           h4 {
             font-size: 15px;
             padding-top: 30px;
@@ -123,7 +124,7 @@
           width: 200px;
 
           // transform: translateY(10px);
-          margin-bottom: 80px;
+          padding-bottom: 30px;
           img {
             margin-left: 20px;
             width: 180px;
