@@ -321,7 +321,7 @@ function Registration(params) {
     <div>
       <div className="reg">
         <div className="reg-card">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} autoComplete="off">
             <div className="reg-card--h4">
               <h4>REGISTRATION</h4>
             </div>

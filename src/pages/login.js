@@ -22,7 +22,7 @@ function Login(params) {
     <div>
       <div className="login">
         <div className="login-form">
-          <form className="form" onSubmit={handleonClick}>
+          <form className="form" onSubmit={handleonClick} autoComplete="off">
             <h2 className="h2">LOGIN</h2>
             <label className="username" for="username">
               Username

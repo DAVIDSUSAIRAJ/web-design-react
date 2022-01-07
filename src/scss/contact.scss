@@ -96,23 +96,27 @@
     &-card {
       width: 100vw;
       height: 100vh;
-      background-color: rgb(61, 235, 8);
+      // background-color: rgb(240, 16, 147);
+      // padding-top: 50px;
+      transform: translateY(10%);
 
       &1 {
+        margin: auto;
         // background-color: yellow;
         width: 100vw;
-        height: 100vh;
-        padding-top: 60px;
+        height: auto;
+        // padding-top: 60px;
+        // margin-top: 50px;
         flex-direction: column;
 
         &--form {
           margin-left: 0px;
-          // flex-grow: 0;
+          flex-grow: 0;
           // padding-top: 30px;
-          width: 60vw;
-          height: 60vh;
+          // width: 60vw;
+          // height: 60vh;
 
-          transform: translateY(90px);
+          // transform: translateY(90px);
           h4 {
             font-size: 15px;
             padding-top: 30px;
@@ -124,7 +128,7 @@
           width: 200px;
 
           // transform: translateY(10px);
-          padding-bottom: 30px;
+          // padding-bottom: 30px;
           img {
             margin-left: 20px;
             width: 180px;

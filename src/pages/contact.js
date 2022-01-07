@@ -80,7 +80,7 @@ function Contact(params) {
           <div className="contactp-card1">
             <div className="contactp-card1--form">
               <h4>Contact us a messsage</h4>
-              <form onSubmit={handleSubmit} target="_blank" method="GET">
+              <form onSubmit={handleSubmit} autoComplete="off">
                 <label className="name" for="name">
                   Name
                 </label>
