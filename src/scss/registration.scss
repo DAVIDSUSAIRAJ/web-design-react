@@ -706,7 +706,28 @@
           grid-template-columns: auto;
           gap: 0px;
           padding: 0px;
-
+          // START DATE OF BIRTH INPUT BOX2
+          .input-box2 {
+            .date-tick {
+              top: 28px;
+              right: 34px;
+            }
+            .date-tick-false {
+              top: 28px;
+              right: 34px;
+            }
+            .date-ex {
+              color: red;
+              top: 28px;
+              right: 34px;
+            }
+            .date-ex-false {
+              top: 28px;
+              right: 34px;
+            }
+          }
+          // START DATE OF BIRTH INPUT BOX2
+          // SATART  GENDER INPUTBOX 7
           .input-box7 {
             position: relative;
             .gender {
@@ -741,6 +762,23 @@
               }
             }
           }
+          // END GENDER INPUT BOX 7
+          // START CITY INPUT BOX8
+          .input-box8 {
+            .city-tick {
+              top: 28px;
+              right: 20px;
+            }
+            .city-tick-false {
+              top: 28px;
+              right: 20px;
+            }
+            .city-ex {
+              top: 28px;
+              right: 20px;
+            }
+          }
+          // END CITY INPUT BOX8
         }
       }
       &--btn {
